@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav :class="navBarOpen ? 'nav-open' : ''">
     <div class="logo">
       <img src="/logo.png" alt="" />
       <p>INARA EQUINIX</p>
@@ -84,6 +84,12 @@ nav {
     color: #ffffff;
     border-bottom: 2px solid #d4a742;
 
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    z-index: 20;
+
     .logo {
       width: 100px;
       height: 100%;
@@ -135,7 +141,7 @@ nav {
       top: -400px;
       transition: top 0.5s ease-in-out;
 
-      z-index: 10;
+      z-index: -1;
 
       a {
         text-decoration: none;
@@ -149,7 +155,11 @@ nav {
 
     .open {
       top: 70px;
+      border-bottom: 2px solid #d4a742;
     }
+  }
+  .nav-open {
+    border-bottom: 0px;
   }
 }
 </style>
