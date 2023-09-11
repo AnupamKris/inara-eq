@@ -2,8 +2,9 @@
   <header>
     <NavBar />
   </header>
-  <slot />
-
+  <main>
+    <slot />
+  </main>
   <footer>
     <div class="footer-data">
       <div class="info">
@@ -222,6 +223,10 @@ footer {
         }
       }
     }
+  }
+
+  main {
+    padding-top: 70px;
   }
 }
 </style>

@@ -1,15 +1,19 @@
 <template>
   <nav :class="navBarOpen ? 'nav-open' : ''">
-    <div class="logo">
+    <div class="logo" @click="home">
       <img src="/logo.png" alt="" />
       <p>INARA EQUINIX</p>
     </div>
     <div class="nav-items" :class="navBarOpen ? 'open' : ''">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-      <router-link to="/services">Services</router-link>
-      <router-link to="/news">News</router-link>
-      <router-link to="/contact">Contact</router-link>
+      <router-link @click="navBarOpen = false" to="/">Home</router-link>
+      <router-link @click="navBarOpen = false" to="/about">About</router-link>
+      <router-link @click="navBarOpen = false" to="/services"
+        >Services</router-link
+      >
+      <router-link @click="navBarOpen = false" to="/news">News</router-link>
+      <router-link @click="navBarOpen = false" to="/contact"
+        >Contact</router-link
+      >
     </div>
     <div class="ham">
       <Icon name="eva:menu-outline" @click="navBarOpen = !navBarOpen" />
@@ -19,6 +23,11 @@
 
 <script setup>
 const navBarOpen = ref(false);
+const route = useRoute();
+const home = () => {
+  navigateTo("/");
+  document.getElementById("__nuxt").scrollTo(0, 0);
+};
 </script>
 
 <style lang="scss" scoped>
@@ -70,6 +79,10 @@ nav {
       color: #d4a742;
     }
   }
+
+  .ham {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -83,6 +96,7 @@ nav {
 
     color: #ffffff;
     border-bottom: 2px solid #d4a742;
+    border-top: 2px solid #141414;
 
     position: fixed;
     width: 100%;

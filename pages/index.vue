@@ -143,7 +143,12 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+onMounted(() => {
+  window.scrollTo(0, 0);
+  console.log("mounted");
+});
+</script>
 
 <style lang="scss" scoped>
 .main-img {

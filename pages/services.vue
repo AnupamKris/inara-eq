@@ -74,6 +74,10 @@
 
 <script setup>
 const currentAccordion = ref(null);
+
+onMounted(() => {
+  document.getElementById("__nuxt").scrollTo(0, 0);
+});
 </script>
 
 <style lang="scss" scoped>

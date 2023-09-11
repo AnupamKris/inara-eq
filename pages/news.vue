@@ -27,7 +27,11 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+onMounted(() => {
+  document.getElementById("__nuxt").scrollTo(0, 0);
+});
+</script>
 
 <style lang="scss" scoped>
 .news {
