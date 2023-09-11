@@ -66,6 +66,13 @@
       </div>
     </div>
   </div>
+  <div class="charts">
+      <Chart id="c1" />
+      <Chart2 id="c2" />
+    </div>
+    <div class="charts">
+      <Chart3 id="c3" />
+    </div>
   <div class="why">
     <h2>Why Choose Us?</h2>
     <div class="feats">
@@ -789,6 +796,14 @@ onMounted(() => {
     }
   }
 }
+
+.charts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: column;
+  }
 
 .services {
   width: 100%;

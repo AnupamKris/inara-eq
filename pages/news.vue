@@ -4,6 +4,13 @@
       <h1>News And Events</h1>
       <img src="/news.jpg" alt="" />
     </div>
+    <div class="charts">
+      <Chart id="c1" />
+      <Chart2 id="c2" />
+    </div>
+    <div class="charts">
+      <Chart3 id="c3" />
+    </div>
     <div class="main-news">
       <img src="/ser3.png" alt="" />
       <div class="text">
@@ -70,6 +77,13 @@ onMounted(() => {
     }
   }
 
+  .charts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: column;
+  }
   .ns {
     display: flex;
     justify-content: center;
@@ -137,6 +151,9 @@ onMounted(() => {
 
 @media only screen and (max-width: 768px) {
   .news {
+    .charts {
+      flex-direction: column;
+    }
     .header {
       height: 200px;
       h1 {
