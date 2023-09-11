@@ -290,6 +290,7 @@ onMounted(() => {
           
             span {
               font-weight: 200 !important;
+              font-size: 14px;
               color: #acacac;
             }
           
