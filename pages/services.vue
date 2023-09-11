@@ -103,6 +103,12 @@ const currentAccordion = ref(null);
     padding: 30px 10px;
   }
 
+  .carousel {
+    .carousel__slide {
+      width: 80%;
+    }
+  }
+
   .row {
     margin-top: 30px;
     width: 80%;

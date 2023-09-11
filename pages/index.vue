@@ -25,19 +25,44 @@
     <div class="cards">
       <div class="col">
         <IvCard name="DAX" value="15891.93" place="Fankfurt" percent="-0.24%" />
-        <IvCard name="DAX" value="15891.93" place="Fankfurt" percent="-0.24%" />
+        <IvCard
+          name="DJ Industrial Aver"
+          value="15891.93"
+          place="New York"
+          percent="0.56%"
+        />
       </div>
       <div class="col">
-        <IvCard name="DAX" value="15891.93" place="Fankfurt" percent="-0.24%" />
-        <IvCard name="DAX" value="15891.93" place="Fankfurt" percent="-0.24%" />
+        <IvCard
+          name="EURO STOXX 50"
+          value="34890.24"
+          place="Zürich"
+          percent="0.11%"
+        />
+        <IvCard
+          name="Hang Seng"
+          value="3976.5"
+          place="Hong Kong"
+          percent="-0.26%"
+        />
       </div>
       <div class="col">
-        <IvCard name="DAX" value="15891.93" place="Fankfurt" percent="-0.24%" />
-        <IvCard name="DAX" value="15891.93" place="Fankfurt" percent="-0.24%" />
+        <IvCard
+          name="STOXX Europe 50"
+          value="11090.22"
+          place="Zürich"
+          percent="-0.38%"
+        />
+        <IvCard name="SMI" value="4315.31" place="Zürich" percent="-0.25%" />
       </div>
       <div class="col">
-        <IvCard name="DAX" value="15891.93" place="Fankfurt" percent="-0.24%" />
-        <IvCard name="DAX" value="15891.93" place="Fankfurt" percent="-0.24%" />
+        <IvCard
+          name="NASDAQ 100 Index"
+          value="15462.43083"
+          place="New York"
+          percent="-0.14%"
+        />
+        <IvCard name="Further indices" value=">" />
       </div>
     </div>
   </div>
@@ -148,7 +173,8 @@
     // justify-content: center;
     align-items: center;
     text-align: left;
-    padding-left: 10px;
+    padding-left: 20px;
+    z-index: 5;
 
     &::after {
       content: "";
@@ -159,7 +185,7 @@
       top: 0;
       right: -60px;
       transform: skew(-7deg);
-      z-index: 2;
+      z-index: -1;
     }
   }
 
@@ -311,7 +337,7 @@
     .feat {
       height: 300px;
       width: 300px;
-      border-radius: 50%;
+      border-radius: 150px;
 
       background: #303030;
       display: flex;
@@ -466,6 +492,90 @@
       font-size: 14px;
       font-weight: 300;
       cursor: pointer;
+    }
+  }
+}
+// for mobile scrreen
+@media only screen and (max-width: 768px) {
+  .main-img {
+    height: 400px;
+    position: relative;
+    .static {
+      position: absolute;
+      width: 200px;
+      height: 100px;
+      font-size: 18px;
+
+      top: auto;
+      bottom: 0;
+      left: 0;
+
+      &::after {
+        width: 0;
+        height: 0;
+      }
+    }
+
+    .slides {
+      width: 100%;
+    }
+  }
+  .news {
+    .cards {
+      flex-direction: column;
+      .col {
+        margin: 10px 0;
+        width: 80%;
+      }
+    }
+  }
+
+  .why {
+    height: auto;
+
+    .feats {
+      flex-direction: column;
+      .feat {
+        margin: 10px 0;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .offerings {
+    height: auto;
+    .row {
+      flex-direction: column;
+      background: #e9e9e9;
+      padding: 10px;
+      box-sizing: content-box;
+      border-radius: 10px;
+      .text {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        p {
+          margin-bottom: 5px;
+        }
+        h2 {
+          margin-bottom: 5px;
+        }
+        span {
+          margin-bottom: 5px;
+        }
+      }
+      .img {
+        width: 100%;
+        height: 300px;
+      }
+
+      // odd child
+      &:nth-child(odd) {
+        flex-direction: column-reverse;
+        .text {
+          margin-bottom: 10px;
+        }
+      }
     }
   }
 }

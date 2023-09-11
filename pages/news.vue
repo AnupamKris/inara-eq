@@ -130,4 +130,47 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .news {
+    .header {
+      height: 200px;
+      h1 {
+        font-size: 24px;
+      }
+    }
+    .main-news {
+      flex-direction: column;
+      height: auto;
+      img {
+        width: 100%;
+        height: 300px;
+      }
+      .text {
+        width: 100%;
+        height: auto;
+        padding: 10px 10px;
+        h3 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 12px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .ns {
+      width: 100%;
+      height: auto;
+
+      .news-card {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
 </style>

@@ -181,4 +181,47 @@ footer {
     border-top: 2px solid #383838;
   }
 }
+@media only screen and (max-width: 768px) {
+  footer {
+    height: auto;
+    .footer-data {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 0 10px;
+
+      .info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: left;
+        margin-bottom: 20px;
+
+        img {
+          margin-bottom: 10px;
+        }
+      }
+
+      .services {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 20px;
+
+        border-left: 2px solid #d4a742;
+        padding-left: 20px;
+
+        .socials {
+          justify-content: center;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
 </style>

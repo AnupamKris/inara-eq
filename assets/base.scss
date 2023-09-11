@@ -25,6 +25,7 @@ html,
 body,
 #__nuxt {
   height: 100%;
+  overflow-x: hidden;
 }
 
 .carousel__icon {

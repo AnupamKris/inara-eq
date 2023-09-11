@@ -297,4 +297,69 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    .image {
+      height: 300px;
+    }
+
+    .text {
+      height: auto;
+      padding: 20px 0;
+      h3 {
+        font-size: 18px;
+      }
+      .row {
+        flex-direction: column;
+        .set {
+          width: 100%;
+          height: auto;
+          margin-bottom: 10px;
+          &:nth-child(2) {
+            padding: 20px 0;
+            width: 60%;
+            border-right: none;
+            border-left: none;
+            border-top: 2px solid #d4a742;
+            border-bottom: 2px solid #d4a742;
+          }
+        }
+      }
+    }
+
+    .form {
+      height: auto;
+      padding: 20px 0;
+      p {
+        font-size: 18px;
+        text-align: center;
+      }
+      form {
+        width: 90%;
+        input,
+        textarea {
+          width: 100%;
+        }
+      }
+    }
+
+    .socials {
+      height: auto;
+      padding: 20px 0;
+      p {
+        font-size: 12px;
+      }
+    }
+
+    .map {
+      height: auto;
+      padding: 20px 0;
+      border: none;
+      .pin {
+        left: 50%;
+      }
+    }
+  }
+}
 </style>

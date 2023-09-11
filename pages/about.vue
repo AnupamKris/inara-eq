@@ -22,7 +22,7 @@
       <div class="col">
         <div class="row">
           <img src="/off1.jpg" alt="" />
-          <img src="/off1.jpg" alt="" />
+          <img src="/mis1.jpg" alt="" />
         </div>
         <div class="row-f">
           <img src="/off1.jpg" alt="" />
@@ -256,6 +256,45 @@
         width: 100%;
         height: 150px;
         background: #ffffff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mission {
+    flex-direction: column;
+    .col {
+      width: 100% !important;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+
+  .team {
+    .row {
+      flex-direction: column;
+      width: 100%;
+      .member {
+        margin-bottom: 20px;
+        width: 100% !important;
+        img {
+          width: 90% !important;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+
+  .about {
+    .clients {
+      height: auto;
+      padding: 30px 0;
+      .row {
+        grid-template-columns: repeat(2, 1fr);
+        .tiles {
+          height: 200px;
+        }
       }
     }
   }

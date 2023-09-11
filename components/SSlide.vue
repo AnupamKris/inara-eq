@@ -1,6 +1,6 @@
 <template>
   <div class="slide">
-    <img :src="`/ser${image}.png`" alt="aaa" />
+    <img :src="`/ser${image}.png`" alt="aaa" :wrap-around="true" />
     <div class="text" :class="positions[image % 4]">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, accusamus!
     </div>
@@ -20,7 +20,7 @@ let positions = ["topleft", "topright", "bottomleft", "bottomright"];
 <style lang="scss" scoped>
 .slide {
   height: 500px;
-  width: 100vw;
+  width: 100%;
   position: relative;
 
   img {
