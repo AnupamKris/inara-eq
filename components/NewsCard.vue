@@ -3,7 +3,7 @@
     <div class="img">
       <img src="/off1.jpg" alt="" />
     </div>
-    <h4>Investment in Company</h4>
+    <h4>{{ title }}</h4>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quae
       aperiam rem sit, pariatur quo iure odit! Amet, officiis necessitatibus.
@@ -12,7 +12,23 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const props = defineProps({
+  title: {
+    type: String,
+    default: "Investment in Company",
+  },
+  text: {
+    type: String,
+    default:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quae aperiam rem sit, pariatur quo iure odit! Amet, officiis necessitatibus.",
+  },
+  img: {
+    type: String,
+    default: "/off1.jpg",
+  },
+});
+</script>
 
 <style lang="scss" scoped>
 .news-card {

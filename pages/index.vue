@@ -134,6 +134,65 @@
       </div>
     </div>
   </div>
+  <div class="mission">
+    <div class="col">
+      <h3>Our Mission</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        voluptatum, voluptate, quibusdam, quia voluptas quod dolorum
+        voluptatibus quos quas quidem voluptatem. Quisquam voluptatum,
+        voluptate, quibusdam, quia voluptas quod dolorum voluptatibus quos quas
+        quidem voluptatem.
+      </p>
+    </div>
+    <div class="col">
+      <div class="row">
+        <img src="/off1.jpg" alt="" />
+        <img src="/mis1.jpg" alt="" />
+      </div>
+      <div class="row-f">
+        <img src="/off1.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <div class="recent-news">
+    <h2>Recent News</h2>
+    <div class="row">
+      <div class="col">
+        <NewsCard title="Company Stocks Dropped" />
+      </div>
+      <div class="col">
+        <NewsCard />
+      </div>
+      <div class="col">
+        <NewsCard />
+      </div>
+      <div class="col">
+        <NewsCard />
+      </div>
+      <div class="col">
+        <NewsCard />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <NewsCard title="Company Stocks Dropped" />
+      </div>
+      <div class="col">
+        <NewsCard />
+      </div>
+      <div class="col">
+        <NewsCard />
+      </div>
+      <div class="col">
+        <NewsCard />
+      </div>
+      <div class="col">
+        <NewsCard />
+      </div>
+    </div>
+  </div>
   <div class="newsletter">
     <h2>Subscribe to our Newsletter</h2>
     <div class="form">
@@ -500,6 +559,119 @@ onMounted(() => {
     }
   }
 }
+
+.recent-news {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  scroll-snap-type: x mandatory;
+  scroll-snap-align: center;
+
+  padding: 20px 0;
+
+  h2 {
+    width: 85%;
+    font-size: 24px;
+    font-weight: 500;
+    color: #1f1f1f;
+    margin-bottom: 20px;
+  }
+
+  .row {
+    scroll-snap-type: x mandatory;
+    display: flex;
+    margin: 0 20px;
+    width: 85%;
+
+    overflow-x: auto;
+
+    .news-card {
+      scroll-snap-align: center;
+      width: 400px;
+      margin-left: 0;
+    }
+  }
+  ::-webkit-scrollbar {
+    // width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+}
+
+.mission {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #141414;
+  padding-bottom: 20px;
+  padding: 50px 5%;
+
+  .col {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h3 {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      // text-transform: uppercase;
+      padding: 10px 10px;
+      width: 100%;
+      color: #8d670e;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 300;
+      color: #d4d4d4;
+      width: 100%;
+      padding: 0px 10px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      width: 90%;
+      img {
+        width: 50%;
+
+        height: 200px;
+        object-fit: cover;
+        padding: 10px;
+      }
+    }
+    .row-f {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      width: 90%;
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        padding: 0 10px;
+      }
+    }
+  }
+}
 // for mobile scrreen
 @media only screen and (max-width: 768px) {
   .main-img {
@@ -550,15 +722,17 @@ onMounted(() => {
   .offerings {
     height: auto;
     .row {
+      padding: 20px 0;
       flex-direction: column;
-      background: #e9e9e9;
+      background: #f1f1f1;
       padding: 10px;
       box-sizing: content-box;
       border-radius: 10px;
+      height: auto;
       .text {
         width: 100%;
         height: auto;
-        padding: 0;
+        padding: 20px 0;
         p {
           margin-bottom: 5px;
         }
@@ -572,6 +746,12 @@ onMounted(() => {
       .img {
         width: 100%;
         height: 300px;
+
+        border-radius: 5px;
+        img {
+          height: 100%;
+          width: auto;
+        }
       }
 
       // odd child
@@ -581,6 +761,27 @@ onMounted(() => {
           margin-bottom: 10px;
         }
       }
+    }
+  }
+
+  .recent-news {
+    height: auto;
+
+    .row {
+      .col {
+        .news-card {
+          width: calc(100vw - 40px);
+        }
+      }
+    }
+  }
+
+  .mission {
+    flex-direction: column;
+    .col {
+      width: 100% !important;
+      margin-bottom: 20px;
+      text-align: center;
     }
   }
 }

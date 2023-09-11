@@ -182,6 +182,11 @@ footer {
     border-top: 2px solid #383838;
   }
 }
+
+main {
+  padding-top: 70px;
+}
+
 @media only screen and (max-width: 768px) {
   footer {
     height: auto;
@@ -223,10 +228,6 @@ footer {
         }
       }
     }
-  }
-
-  main {
-    padding-top: 70px;
   }
 }
 </style>

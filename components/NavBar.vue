@@ -42,7 +42,13 @@ nav {
   color: #ffffff;
   border-bottom: 2px solid #d4a742;
 
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+
   .logo {
+    cursor: pointer;
     width: 100px;
     height: 100%;
 
