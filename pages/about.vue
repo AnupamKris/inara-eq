@@ -254,6 +254,7 @@ onMounted(() => {
       }
       img {
         width: 90%;
+
         // margin-left: auto;
       }
     }
@@ -370,12 +371,34 @@ onMounted(() => {
 }
 
 @media screen and (max-width: 600px) {
+  .about {
+    .main {
+      height: auto;
+      padding: 30px 0;
+      h2 {
+        font-size: 24px;
+      }
+      p {
+        width: calc(90% - 20px);
+        // font-size: 14px ;
+        text-align: justify;
+      }
+    }
+  }
+
   .mission {
     flex-direction: column;
     .col {
       width: 100% !important;
       margin-bottom: 20px;
       text-align: center;
+    }
+  }
+
+  .vision {
+    flex-direction: column !important;
+    .col {
+      // flex-direction: column;
     }
   }
 

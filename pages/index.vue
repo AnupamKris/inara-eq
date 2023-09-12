@@ -13,6 +13,11 @@
             <img src="/img2.jpg" alt="" />
           </div>
         </slide>
+        <slide key="3">
+          <div class="carousel__item">
+            <img src="/off1.jpg" alt="" />
+          </div>
+        </slide>
         <template #addons>
           <Navigation />
           <Pagination />
