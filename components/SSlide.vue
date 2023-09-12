@@ -2,7 +2,7 @@
   <div class="slide">
     <img :src="`/ser${image}.png`" alt="aaa" :wrap-around="true" />
     <div class="text" :class="positions[image % 4]">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, accusamus!
+      {{ text }}
     </div>
   </div>
 </template>
@@ -37,9 +37,9 @@ let positions = ["topleft", "topright", "bottomleft", "bottomright"];
     font-size: 20px;
     font-weight: 500;
     text-align: center;
-
-    width: 400px;
-    height: 150px;
+    padding: 0 10px;
+    width: 500px;
+    height: 200px;
     margin-bottom: 40px;
     background: #ffffff;
 

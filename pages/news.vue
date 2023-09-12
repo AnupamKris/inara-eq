@@ -12,24 +12,58 @@
       <Chart3 id="c3" />
     </div>
     <div class="main-news">
-      <img src="/ser3.png" alt="" />
+      <img src="/bitcoin.jpg" alt="" />
       <div class="text">
-        <h3>Investment in Company</h3>
+        <h3>
+          G20 Summit: Achieving PM’s vision of comprehensive global framework
+          for crypto regulation
+        </h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-          quae aperiam rem sit, pariatur quo iure odit! Amet, officiis
-          necessitatibus.
+          The Financial Action Task Force has already made significant strides
+          in this regard. We have been voluntarily following the best practices
+          and have been supporting the Government of India on complying with all
+          notifications including the one under Prevention of Money Laundering
+          Act (PMLA). This coupled with global implementation of an information
+          sharing framework and an effective travel rule is necessary to help
+          address this concern, effectively.
         </p>
         <span>Read More</span>
       </div>
     </div>
     <div class="ns">
-      <NewsCard />
-      <NewsCard />
-      <NewsCard />
-      <NewsCard />
-      <NewsCard />
-      <NewsCard />
+      <NewsCard
+        title="Day trading guide for today"
+        content="Market experts have recommended six stocks to buy today — Divi’s Lab, Axis Bank, Gujarat Gas, Bharti Airtel, PEL and MFSL. These stocks have been selected based on technical ..."
+      />
+
+      <NewsCard
+        title="Best Stocks To Buy Today Under Rs 200"
+        content="The benchmark Nifty 50 struck a new lifetime high and broke the critical 20,000 level on ..."
+        img="stocks.jpg"
+      />
+
+      <NewsCard
+        title="Crypto.com Becomes Official Crypto Platform Partner of PSG"
+        content="Crypto.com, a leading crypto platform, has announced a long-term partnership with PSG..."
+        img="/crypto.jpg"
+      />
+
+      <NewsCard
+        title="El Salvador Becomes First Country to Adopt Bitcoin as Legal Tender"
+        content="El Salvador has made history by becoming..."
+        img="/elsalvador.png"
+      />
+
+      <NewsCard
+        title="Bank of Baroda cuts interest rates on home and other personal loans"
+        content="Bank of Baroda, one of the leading public..."
+        img="/bob.png"
+      />
+      <NewsCard
+        title="Latest Technologies for Development"
+        content="Find out the latest Tech that would boost your development speed and efficiency..."
+        img="/ser1.png"
+      />
     </div>
   </div>
 </template>
@@ -82,7 +116,7 @@ onMounted(() => {
     justify-content: space-around;
     align-items: center;
     margin-top: 30px;
-    flex-direction: column;
+    // flex-direction: column;
   }
   .ns {
     display: flex;

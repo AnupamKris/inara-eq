@@ -3,20 +3,25 @@
     <div class="main">
       <h2>About Us</h2>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt autem
-        pariatur odio alias iste voluptatum voluptates quibusdam, repellat vel
-        eaque.
+        We stand as the forefront in the field of automated trading bots,
+        harnessing the rapid processing capabilities of computers in comparison
+        to human traders. Our approach involves employing pre-programmed
+        automated trading commands that consider factors like timing, pricing,
+        and volume. Our system encompasses a diverse array of trading
+        strategies, including some derived from mathematical finance formulas
+        and findings, along with specialized software to enhance performance.
       </p>
     </div>
     <div class="mission">
       <div class="col">
         <h3>Our Mission</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptatum, voluptate, quibusdam, quia voluptas quod dolorum
-          voluptatibus quos quas quidem voluptatem. Quisquam voluptatum,
-          voluptate, quibusdam, quia voluptas quod dolorum voluptatibus quos
-          quas quidem voluptatem.
+          Our objective is to assist our clients in attaining financial
+          independence through value addition and offering active portfolio
+          management. We achieve this by conducting market research and
+          implementing strategies that align with our core principles, while
+          also fostering a motivating and satisfying work environment for our
+          employees.
         </p>
       </div>
       <div class="col">
@@ -29,28 +34,89 @@
         </div>
       </div>
     </div>
+    <div class="mission vision">
+      <div class="col">
+        <h3>Our Vision</h3>
+        <p>
+          We utilize computer models to establish structured trade objectives,
+          implement risk management strategies, and create rules for executing
+          trades in a systematic manner.
+        </p>
+      </div>
+      <div class="col">
+        <img src="/vision.png" alt="" />
+      </div>
+    </div>
+    <div class="mission exec">
+      <div class="col">
+        <h3>Executive Summary</h3>
+        <p>
+          By creating automations and custom strategies within Analytica,
+          traders remove emotion, save time and energy as the software executes
+          your trading strategies, whether you are a beginner or an experienced
+          trader looking for deep functionality to maximize your stock trading
+          profits, Analytica provides the tools for you. Trading features like
+          paper trading, back testing, trailing stop-loss and a strategy
+          designer tool that makes it easy to customize your strategy. You can
+          leverage over 130 indicators and candle patterns within the platform
+          to help dictate your trades. Analytica is cloud-based and supports up
+          to 21 stock exchanges, and we are always adding more to the list. For
+          advanced traders, Analytica has a marketplace of free and paid signals
+          which you can combine with technical indicators to customize your own
+          strategy.
+        </p>
+      </div>
+    </div>
+    <div class="mission exec dark">
+      <div class="col">
+        <h3>Product Overview</h3>
+        <p>
+          Our product is an electronic trading platform that can execute
+          repetitive tasks at speeds of orders whose magnitude is greater than
+          the human equivalent, Making use of strategic formulas to execute
+          trades.
+          <br />
+          <br />
+          Systematic Trading makes use of computer models to define trade goals,
+          risk controls and rules that can execute trade orders in a methodical
+          way.
+          <br />
+          <br />
+          Pairs trading or pair trading is a long-short, ideally market-neutral
+          strategy enabling traders to profit from transient discrepancies in
+          relative value of close substitutes.
+        </p>
+      </div>
+    </div>
+    <div class="mission exec">
+      <div class="col">
+        <h3>Problems</h3>
+        <p>
+          Humans are inherently rife with anxiety and overconfidence depending
+          on the time of day. When trading, emotion equals danger. Trading bots,
+          on the other hand, completely lack emotion and are immune to the hype
+          and noise which befall so many, especially novice traders. Humans also
+          were found lacking the ability to; abide by a strict set of rules and;
+          abandon rules or habits in favor of better, more useful ones. They are
+          slow to adapt when something isn’t working. But bots are continuing to
+          get smarter. With advances in AI, bots are capable of self-optimizing,
+          to determine the best methods to achieve the greatest outcomes for any
+          given task.
+        </p>
+      </div>
+    </div>
     <div class="team">
       <h3>Our Leaders</h3>
       <div class="row">
         <div class="member">
-          <img src="/off1.jpg" alt="" />
-          <h4>John Doe</h4>
-          <p>CEO</p>
+          <img src="/ria.png" alt="" />
+          <h4>Ria Robin Mohamed Rafi</h4>
+          <p>Founder</p>
         </div>
         <div class="member">
           <img src="/off1.jpg" alt="" />
           <h4>John Doe</h4>
-          <p>CTO</p>
-        </div>
-        <div class="member">
-          <img src="/off1.jpg" alt="" />
-          <h4>John Doe</h4>
-          <p>COO</p>
-        </div>
-        <div class="member">
-          <img src="/off1.jpg" alt="" />
-          <h4>John Doe</h4>
-          <p>CFO</p>
+          <p>Co Founder</p>
         </div>
       </div>
     </div>
@@ -121,6 +187,7 @@ onMounted(() => {
     background: #d3d3d3;
     padding-bottom: 20px;
     padding: 50px 5%;
+    width: 100%;
 
     .col {
       width: 45%;
@@ -177,6 +244,42 @@ onMounted(() => {
     }
   }
 
+  .vision {
+    background: #141414;
+    flex-direction: row-reverse;
+    .col {
+      width: 45%;
+      p {
+        color: #d4d4d4;
+      }
+      img {
+        width: 90%;
+        // margin-left: auto;
+      }
+    }
+  }
+
+  .exec {
+    background: #d3d3d3;
+    padding: 50px 5%;
+    .col {
+      width: 100%;
+      p {
+        color: #141414;
+        text-align: justify;
+      }
+    }
+  }
+
+  .dark {
+    background: #141414;
+    .col {
+      p {
+        color: #d4d4d4;
+      }
+    }
+  }
+
   .team {
     width: 100%;
     // height: 450px;
@@ -200,19 +303,20 @@ onMounted(() => {
 
     .row {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       margin-top: 10px;
       width: 90%;
       .member {
         width: 20%;
+        min-width: 350px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         img {
           width: 100%;
-          height: 300px;
+          height: 400px;
           object-fit: cover;
           padding: 10px;
         }

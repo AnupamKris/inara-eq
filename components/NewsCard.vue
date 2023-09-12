@@ -1,12 +1,11 @@
 <template>
   <div class="news-card">
     <div class="img">
-      <img src="/off1.jpg" alt="" />
+      <img :src="img" alt="" />
     </div>
     <h4>{{ title }}</h4>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quae
-      aperiam rem sit, pariatur quo iure odit! Amet, officiis necessitatibus.
+      {{ content }}
     </p>
     <span>Read More</span>
   </div>
@@ -18,7 +17,7 @@ const props = defineProps({
     type: String,
     default: "Investment in Company",
   },
-  text: {
+  content: {
     type: String,
     default:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quae aperiam rem sit, pariatur quo iure odit! Amet, officiis necessitatibus.",

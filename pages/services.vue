@@ -4,7 +4,7 @@
 
     <carousel :items-to-show="1" :autoplay="2000">
       <slide v-for="slide in 5" :key="slide">
-        <SSlide position="topleft" :image="slide" />
+        <SSlide position="topleft" :image="slide" :text="content[slide-1]"/>
       </slide>
 
       <template #addons>
@@ -132,6 +132,12 @@
 
 <script setup>
 const currentAccordion = ref(null);
+const content = [
+  "Our cutting-edge digital services offer innovative solutions for your business needs, from online platforms to automation tools, enhancing your digital presence and efficiency.",
+  "As leaders in the gold wholesale industry, we provide access to the finest gold products, ensuring purity and quality for your investment and trading requirements.",
+  "Trust us to manage your assets with a focus on growth and security. Our experienced team tailors investment strategies to meet your financial goals.",
+  "Dive into the world of stock trading with our comprehensive services. We offer the tools and expertise to help you navigate the dynamic stock market effectively.",
+  "Discover the convenience of accessing a wide range of financial services, including digital solutions, gold wholesale, asset management, and stock trading, all in one location at the heart of Dubai."]
 
 onMounted(() => {
   document.getElementById("__nuxt").scrollTo(0, 0);
@@ -274,7 +280,7 @@ onMounted(() => {
       padding-bottom: 30px;
       .title {
         p {
-          color: #d4a742;
+          color: #d4a842;
         }
         .icon {
           transform: rotate(180deg);

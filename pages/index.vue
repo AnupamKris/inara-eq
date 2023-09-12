@@ -57,7 +57,7 @@
       </div>
       <div class="col">
         <IvCard
-          name="NASDAQ 100 Index"
+          name="NASDAQ 100"
           value="15462.43083"
           place="New York"
           percent="-0.14%"
@@ -77,24 +77,24 @@
     <h2>Why Choose Us?</h2>
     <div class="feats">
       <div class="feat">
-        <Icon name="ri:coupon-3-fill" />
-        <h3>Lorem ipsum dolor sit amet.</h3>
+        <Icon name="carbon:improve-relevance" />
+        <h3>Continuous Improvement</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, iusto.
+          Committed to constant innovation, our team keeps you ahead by staying updated on market trends and adapting to change.
         </p>
       </div>
       <div class="feat">
-        <Icon name="ri:coupon-fill" />
-        <h3>Lorem ipsum dolor sit amet.</h3>
+        <Icon name="carbon:edge-node" />
+        <h3>Cutting-Edge Technology</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, iusto.
+          We constantly invest in state-of-the-art technology and software to provide you with the most powerful trading tools available.
         </p>
       </div>
       <div class="feat">
-        <Icon name="fluent:money-20-filled" />
-        <h3>Lorem ipsum dolor sit amet.</h3>
+        <Icon name="mdi:account-service" />
+        <h3>Personalized Service</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, iusto.
+          We value every client's unique trading objectives offer personalized support for your specific needs and goals.
         </p>
       </div>
     </div>
@@ -104,10 +104,9 @@
     <div class="row">
       <div class="text">
         <p>Spending & Saving</p>
-        <h2>Investing for a better future</h2>
+        <h2>Diverse Trading Strategies</h2>
         <span
-          >Fidelity cash management products help you spend and save smarter so
-          you can reach your goals.</span
+          >We offer a diverse range of trading strategies, some of which are based on formulas and insights derived from mathematical finance. Whether you prefer algorithmic trading, trend following, or quantitative analysis, we have the strategies to suit your specific trading goals and risk appetite.</span
         >
       </div>
       <div class="img">
@@ -119,21 +118,19 @@
         <img src="/off2.jpg" alt="" />
       </div>
       <div class="text">
-        <p>Trading & Investing</p>
-        <h2>Investing for a better future</h2>
+        <p>Specialized Software</p>
+        <h2>Ease Of Use</h2>
         <span
-          >Whether you are an active trader or investing in the future, we can
-          help you reach your goals.</span
+          >Our specialized trading software is engineered to meet the unique needs of traders seeking an edge in the financial markets. We provide you with the tools and technology required to navigate the complexities of modern trading effectively.</span
         >
       </div>
     </div>
     <div class="row">
       <div class="text">
-        <p>Wholesale Purchase</p>
-        <h2>Get things for most economic value</h2>
+        <p>Seamless Trading</p>
+        <h2>Automated Trading Bots:</h2>
         <span
-          >Whether you are an active trader or investing in the future, we can
-          help you reach your goals.</span
+          >Gain a competitive edge in the financial markets with our state-of-the-art trading bots. These bots are meticulously programmed to execute trades with precision, accounting for crucial variables such as time, price, and volume. Let technology work tirelessly on your behalf to maximize your trading potential.</span
         >
       </div>
       <div class="img">
@@ -145,11 +142,7 @@
     <div class="col">
       <h3>Our Mission</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        voluptatum, voluptate, quibusdam, quia voluptas quod dolorum
-        voluptatibus quos quas quidem voluptatem. Quisquam voluptatum,
-        voluptate, quibusdam, quia voluptas quod dolorum voluptatibus quos quas
-        quidem voluptatem.
+        Our objective is to assist our clients in attaining financial independence through value addition and offering active portfolio management. We achieve this by conducting market research and implementing strategies that align with our core principles, while also fostering a motivating and satisfying work environment for our employees.
       </p>
     </div>
     <div class="col">
@@ -167,19 +160,20 @@
     <h2>Recent News</h2>
     <div class="row">
       <div class="col">
-        <NewsCard title="Company Stocks Dropped" />
+        <NewsCard title="Day trading guide for today" content="Market experts have recommended six stocks to buy today — Divi’s Lab, Axis Bank, Gujarat Gas, Bharti Airtel, PEL and MFSL. These stocks have been selected based on technical ..."/>
       </div>
       <div class="col">
-        <NewsCard />
+        <NewsCard title="Best Stocks To Buy Today Under Rs 200" content="The benchmark Nifty 50 struck a new lifetime high and broke the critical 20,000 level on ..." img="stocks.jpg"/>
       </div>
       <div class="col">
-        <NewsCard />
+        <NewsCard title="Crypto.com Becomes Official Crypto Platform Partner of PSG" content="Crypto.com, a leading crypto platform, has announced a long-term partnership with PSG..." img="/crypto.jpg"/>
+        <!-- 9345651129 -->
       </div>
       <div class="col">
-        <NewsCard />
+        <NewsCard title="El Salvador Becomes First Country to Adopt Bitcoin as Legal Tender" content="El Salvador has made history by becoming..." img="/elsalvador.png"/>
       </div>
       <div class="col">
-        <NewsCard />
+        <NewsCard title="Bank of Baroda cuts interest rates on home and other personal loans" content="Bank of Baroda, one of the leading public..." img="/bob.png"/>
       </div>
     </div>
     <div class="row">
@@ -535,7 +529,7 @@ onMounted(() => {
       .icon {
         width: 70px;
         height: 70px;
-        border-radius: 50%;
+        border-radius: 20px;
         // background: #ffffff;
         color: #ffffff;
         display: flex;
@@ -802,7 +796,7 @@ onMounted(() => {
     justify-content: space-around;
     align-items: center;
     margin-top: 30px;
-    flex-direction: column;
+    // flex-direction: column;
   }
 
 .services {
@@ -916,6 +910,10 @@ onMounted(() => {
 }
 // for mobile scrreen
 @media only screen and (max-width: 768px) {
+  .charts {
+    flex-direction: column;
+    
+  }
   .main-img {
     height: 400px;
     position: relative;
