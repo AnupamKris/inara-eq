@@ -26,11 +26,12 @@
       </div>
       <div class="col">
         <div class="row">
-          <img src="/off1.jpg" alt="" />
-          <img src="/mis1.jpg" alt="" />
+          <img src="/mission3.png" alt="" />
+
+          <img src="/mission2.png" alt="" />
         </div>
         <div class="row-f">
-          <img src="/off1.jpg" alt="" />
+          <img src="/mission2.jpg" alt="" />
         </div>
       </div>
     </div>
@@ -44,7 +45,7 @@
         </p>
       </div>
       <div class="col">
-        <img src="/vision.png" alt="" />
+        <img src="/vision.jpg" alt="" />
       </div>
     </div>
     <div class="mission exec">
@@ -67,7 +68,22 @@
         </p>
       </div>
     </div>
-    <div class="mission exec dark">
+    <div class="mission exec dark col2">
+      <div class="col">
+        <h3>Problems</h3>
+        <p>
+          Humans are inherently rife with anxiety and overconfidence depending
+          on the time of day. When trading, emotion equals danger. Trading bots,
+          on the other hand, completely lack emotion and are immune to the hype
+          and noise which befall so many, especially novice traders. Humans also
+          were found lacking the ability to; abide by a strict set of rules and;
+          abandon rules or habits in favor of better, more useful ones. They are
+          slow to adapt when something isn’t working. But bots are continuing to
+          get smarter. With advances in AI, bots are capable of self-optimizing,
+          to determine the best methods to achieve the greatest outcomes for any
+          given task.
+        </p>
+      </div>
       <div class="col">
         <h3>Product Overview</h3>
         <p>
@@ -90,18 +106,12 @@
     </div>
     <div class="mission exec">
       <div class="col">
-        <h3>Problems</h3>
+        <h3>Licenses</h3>
         <p>
-          Humans are inherently rife with anxiety and overconfidence depending
-          on the time of day. When trading, emotion equals danger. Trading bots,
-          on the other hand, completely lack emotion and are immune to the hype
-          and noise which befall so many, especially novice traders. Humans also
-          were found lacking the ability to; abide by a strict set of rules and;
-          abandon rules or habits in favor of better, more useful ones. They are
-          slow to adapt when something isn’t working. But bots are continuing to
-          get smarter. With advances in AI, bots are capable of self-optimizing,
-          to determine the best methods to achieve the greatest outcomes for any
-          given task.
+          <b>Officially Approved by the Dubai Government</b>
+          <br />Inara Equinix proudly holds all necessary approvals from the
+          Dubai government, ensuring compliance and credibility in all our
+          operations.
         </p>
       </div>
     </div>
@@ -114,13 +124,13 @@
           <p>Founder</p>
         </div>
         <div class="member">
-          <img src="/off1.jpg" alt="" />
+          <img src="/ria.png" alt="" />
           <h4>John Doe</h4>
           <p>Co Founder</p>
         </div>
       </div>
     </div>
-    <div class="clients">
+    <!-- <div class="clients">
       <h3>Our Clients</h3>
       <div class="row">
         <div class="tiles"></div>
@@ -134,7 +144,7 @@
         <div class="tiles"></div>
         <div class="tiles"></div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -220,12 +230,20 @@ onMounted(() => {
         align-items: center;
         margin-top: 10px;
         width: 90%;
-        img {
+
+        .enclosure {
           width: 50%;
+          height: 100%;
+          border-radius: 5px;
+          overflow: hidden;
+        }
+        img {
+          width: 100%;
 
           height: 200px;
           object-fit: cover;
           padding: 10px;
+          border-radius: 5px;
         }
       }
       .row-f {
@@ -269,6 +287,11 @@ onMounted(() => {
         color: #141414;
         text-align: justify;
       }
+    }
+  }
+  .col2 {
+    align-items: flex-start;
+    .col {
     }
   }
 

@@ -34,6 +34,7 @@
       <NewsCard
         title="Day trading guide for today"
         content="Market experts have recommended six stocks to buy today — Divi’s Lab, Axis Bank, Gujarat Gas, Bharti Airtel, PEL and MFSL. These stocks have been selected based on technical ..."
+        img="news1.png"
       />
 
       <NewsCard

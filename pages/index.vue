@@ -8,16 +8,32 @@
             <img src="/main.jpg" alt="" />
           </div>
         </slide>
+        <slide key="6">
+          <div class="carousel__item">
+            <img src="/dubai0.jpg" alt="" />
+          </div>
+        </slide>
         <slide key="2">
           <div class="carousel__item">
-            <img src="/img2.jpg" alt="" />
+            <img src="/dubai2.jpg" alt="" />
           </div>
         </slide>
         <slide key="3">
           <div class="carousel__item">
-            <img src="/off1.jpg" alt="" />
+            <img src="/dubai1.webp" alt="" />
           </div>
         </slide>
+        <slide key="4">
+          <div class="carousel__item">
+            <img src="/dubai2.jpeg" alt="" />
+          </div>
+        </slide>
+        <slide key="5">
+          <div class="carousel__item">
+            <img src="/dubai4.png" alt="" />
+          </div>
+        </slide>
+
         <template #addons>
           <Navigation />
           <Pagination />
@@ -72,12 +88,12 @@
     </div>
   </div>
   <div class="charts">
-      <Chart id="c1" />
-      <Chart2 id="c2" />
-    </div>
-    <div class="charts">
-      <Chart3 id="c3" />
-    </div>
+    <Chart id="c1" />
+    <Chart2 id="c2" />
+  </div>
+  <div class="charts">
+    <Chart3 id="c3" />
+  </div>
   <div class="why">
     <h2>Why Choose Us?</h2>
     <div class="feats">
@@ -85,21 +101,24 @@
         <Icon name="carbon:improve-relevance" />
         <h3>Continuous Improvement</h3>
         <p>
-          Committed to constant innovation, our team keeps you ahead by staying updated on market trends and adapting to change.
+          Committed to constant innovation, our team keeps you ahead by staying
+          updated on market trends and adapting to change.
         </p>
       </div>
       <div class="feat">
         <Icon name="carbon:edge-node" />
         <h3>Cutting-Edge Technology</h3>
         <p>
-          We constantly invest in state-of-the-art technology and software to provide you with the most powerful trading tools available.
+          We constantly invest in state-of-the-art technology and software to
+          provide you with the most powerful trading tools available.
         </p>
       </div>
       <div class="feat">
         <Icon name="mdi:account-service" />
         <h3>Personalized Service</h3>
         <p>
-          We value every client's unique trading objectives offer personalized support for your specific needs and goals.
+          We value every client's unique trading objectives offer personalized
+          support for your specific needs and goals.
         </p>
       </div>
     </div>
@@ -111,22 +130,29 @@
         <p>Spending & Saving</p>
         <h2>Diverse Trading Strategies</h2>
         <span
-          >We offer a diverse range of trading strategies, some of which are based on formulas and insights derived from mathematical finance. Whether you prefer algorithmic trading, trend following, or quantitative analysis, we have the strategies to suit your specific trading goals and risk appetite.</span
+          >We offer a diverse range of trading strategies, some of which are
+          based on formulas and insights derived from mathematical finance.
+          Whether you prefer algorithmic trading, trend following, or
+          quantitative analysis, we have the strategies to suit your specific
+          trading goals and risk appetite.</span
         >
       </div>
       <div class="img">
-        <img src="/off1.jpg" alt="" />
+        <img src="/trade.jpg" alt="" />
       </div>
     </div>
     <div class="row">
       <div class="img">
-        <img src="/off2.jpg" alt="" />
+        <img src="/ease.jpg" alt="" />
       </div>
       <div class="text">
         <p>Specialized Software</p>
         <h2>Ease Of Use</h2>
         <span
-          >Our specialized trading software is engineered to meet the unique needs of traders seeking an edge in the financial markets. We provide you with the tools and technology required to navigate the complexities of modern trading effectively.</span
+          >Our specialized trading software is engineered to meet the unique
+          needs of traders seeking an edge in the financial markets. We provide
+          you with the tools and technology required to navigate the
+          complexities of modern trading effectively.</span
         >
       </div>
     </div>
@@ -135,11 +161,15 @@
         <p>Seamless Trading</p>
         <h2>Automated Trading Bots:</h2>
         <span
-          >Gain a competitive edge in the financial markets with our state-of-the-art trading bots. These bots are meticulously programmed to execute trades with precision, accounting for crucial variables such as time, price, and volume. Let technology work tirelessly on your behalf to maximize your trading potential.</span
+          >Gain a competitive edge in the financial markets with our
+          state-of-the-art trading bots. These bots are meticulously programmed
+          to execute trades with precision, accounting for crucial variables
+          such as time, price, and volume. Let technology work tirelessly on
+          your behalf to maximize your trading potential.</span
         >
       </div>
       <div class="img">
-        <img src="/off3.jpg" alt="" />
+        <img src="/auto.png" alt="" />
       </div>
     </div>
   </div>
@@ -147,16 +177,21 @@
     <div class="col">
       <h3>Our Mission</h3>
       <p>
-        Our objective is to assist our clients in attaining financial independence through value addition and offering active portfolio management. We achieve this by conducting market research and implementing strategies that align with our core principles, while also fostering a motivating and satisfying work environment for our employees.
+        Our objective is to assist our clients in attaining financial
+        independence through value addition and offering active portfolio
+        management. We achieve this by conducting market research and
+        implementing strategies that align with our core principles, while also
+        fostering a motivating and satisfying work environment for our
+        employees.
       </p>
     </div>
     <div class="col">
       <div class="row">
-        <img src="/off1.jpg" alt="" />
-        <img src="/mis1.jpg" alt="" />
+        <img src="/mission3.png" alt="" />
+        <img src="/mission2.png" alt="" />
       </div>
       <div class="row-f">
-        <img src="/off1.jpg" alt="" />
+        <img src="/mission2.jpg" alt="" />
       </div>
     </div>
   </div>
@@ -165,42 +200,85 @@
     <h2>Recent News</h2>
     <div class="row">
       <div class="col">
-        <NewsCard title="Day trading guide for today" content="Market experts have recommended six stocks to buy today — Divi’s Lab, Axis Bank, Gujarat Gas, Bharti Airtel, PEL and MFSL. These stocks have been selected based on technical ..."/>
+        <NewsCard
+          title="Day trading guide for today"
+          content="Market experts have recommended six stocks to buy today — Divi’s Lab, Axis Bank, Gujarat Gas, Bharti Airtel, PEL and MFSL. These stocks have been selected based on technical ..."
+          img="news1.png"
+        />
       </div>
       <div class="col">
-        <NewsCard title="Best Stocks To Buy Today Under Rs 200" content="The benchmark Nifty 50 struck a new lifetime high and broke the critical 20,000 level on ..." img="stocks.jpg"/>
+        <NewsCard
+          title="Best Stocks To Buy Today Under Rs 200"
+          content="The benchmark Nifty 50 struck a new lifetime high and broke the critical 20,000 level on ..."
+          img="stocks.jpg"
+        />
       </div>
       <div class="col">
-        <NewsCard title="Crypto.com Becomes Official Crypto Platform Partner of PSG" content="Crypto.com, a leading crypto platform, has announced a long-term partnership with PSG..." img="/crypto.jpg"/>
+        <NewsCard
+          title="Crypto.com Becomes Official Crypto Platform Partner of PSG"
+          content="Crypto.com, a leading crypto platform, has announced a long-term partnership with PSG..."
+          img="/crypto.jpg"
+        />
         <!-- 9345651129 -->
       </div>
       <div class="col">
-        <NewsCard title="El Salvador Becomes First Country to Adopt Bitcoin as Legal Tender" content="El Salvador has made history by becoming..." img="/elsalvador.png"/>
+        <NewsCard
+          title="El Salvador Becomes First Country to Adopt Bitcoin as Legal Tender"
+          content="El Salvador has made history by becoming..."
+          img="/elsalvador.png"
+        />
       </div>
       <div class="col">
-        <NewsCard title="Bank of Baroda cuts interest rates on home and other personal loans" content="Bank of Baroda, one of the leading public..." img="/bob.png"/>
+        <NewsCard
+          title="Bank of Baroda cuts interest rates on home and other personal loans"
+          content="Bank of Baroda, one of the leading public..."
+          img="/bob.png"
+        />
       </div>
     </div>
     <div class="row">
       <div class="col">
-        <NewsCard title="Company Stocks Dropped" />
+        <NewsCard
+          title="Bank of Baroda cuts interest rates on home and other personal loans"
+          content="Bank of Baroda, one of the leading public..."
+          img="/bob.png"
+        />
       </div>
       <div class="col">
-        <NewsCard />
+        <NewsCard
+          title="Crypto.com Becomes Official Crypto Platform Partner of PSG"
+          content="Crypto.com, a leading crypto platform, has announced a long-term partnership with PSG..."
+          img="/crypto.jpg"
+        />
+        <!-- 9345651129 -->
+      </div>
+
+      <div class="col">
+        <NewsCard
+          title="El Salvador Becomes First Country to Adopt Bitcoin as Legal Tender"
+          content="El Salvador has made history by becoming..."
+          img="/elsalvador.png"
+        />
       </div>
       <div class="col">
-        <NewsCard />
+        <NewsCard
+          title="Best Stocks To Buy Today Under Rs 200"
+          content="The benchmark Nifty 50 struck a new lifetime high and broke the critical 20,000 level on ..."
+          img="stocks.jpg"
+        />
       </div>
       <div class="col">
-        <NewsCard />
-      </div>
-      <div class="col">
-        <NewsCard />
+        <NewsCard
+          title="Day trading guide for today"
+          content="Market experts have recommended six stocks to buy today — Divi’s Lab, Axis Bank, Gujarat Gas, Bharti Airtel, PEL and MFSL. These stocks have been selected based on technical ..."
+          img="news1.png"
+        />
       </div>
     </div>
   </div>
   <div class="services">
-    <h2>Our Offerings</h2>
+    <h3>Our Offerings</h3>
+
     <div class="accordion">
       <div class="service" :class="currentAccordion == 0 ? 'expanded' : ''">
         <div class="title" @click="currentAccordion = 0">
@@ -309,6 +387,24 @@
           <p >
             <p class="sub-title">Electronic Money</p>
             <span>Step into the digital age of finance with our electronic money solutions. We provide secure and convenient electronic money services for seamless transactions. Whether you need digital wallets, online payments, or mobile banking, we offer user-friendly options. Our technology ensures quick and reliable electronic money transfers. Join us to experience the future of finance with ease and efficiency.</span>
+          </p>
+        </div>
+      </div>
+      <div class="service" :class="currentAccordion == 4 ? 'expanded' : ''">
+        <div class="title" @click="currentAccordion = 4">
+          <p>Sea Food</p>
+          <Icon name="eva:arrow-ios-downward-outline" />
+        </div>
+        <div class="content">
+          <p >
+            <p class="sub-title">Sustainable Seafood Sourcing</p>
+            <span>As responsible stewards of our oceans, we're dedicated to sustainable fishing practices. We work closely with fishermen and suppliers who share our commitment to preserving marine ecosystems for generations to come.</span>
+          </p>
+        </div>
+        <div class="content">
+          <p >
+            <p class="sub-title">Your Gateway to Ocean's Bounty</p>
+            <span>We are a trusted partner in the world of seafood export and import. With a deep-seated commitment to quality, sustainability, and global culinary excellence, we bring the finest treasures of the sea to your plate.</span>
           </p>
         </div>
       </div>
@@ -797,12 +893,12 @@ onMounted(() => {
 }
 
 .charts {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 30px;
-    // flex-direction: column;
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  // flex-direction: column;
+}
 
 .services {
   width: 100%;
@@ -917,7 +1013,6 @@ onMounted(() => {
 @media only screen and (max-width: 768px) {
   .charts {
     flex-direction: column;
-    
   }
   .main-img {
     height: 400px;

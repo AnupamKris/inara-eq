@@ -8,13 +8,16 @@
   <footer>
     <div class="footer-data">
       <div class="info">
-        <img src="/logo.png" alt="" />
-        <p class="p-logo">INARA EQUINIX L.L.C.</p>
-
+        <div class="imges">
+          <img src="/logo.png" alt="" />
+          <img src="/meydan.svg" alt="" />
+          <img src="/dubaimun.jpeg" alt="" />
+          <img src="/sira.jpg" alt="" />
+        </div>
         <h3>About Us</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-          exercitationem.
+          Pioneering the forefront of automated trading, we leverage advanced
+          computer power to outperform human traders.
         </p>
       </div>
       <div class="services">
@@ -22,6 +25,7 @@
         <NuxtLink to="services">Wholesale Buying</NuxtLink>
         <NuxtLink to="services">Scrap & Metals</NuxtLink>
         <NuxtLink to="services">Trading</NuxtLink>
+        <NuxtLink to="services">Sea Food</NuxtLink>
       </div>
       <div class="services">
         <h3>Links</h3>
@@ -31,7 +35,7 @@
       </div>
       <div class="services">
         <h3>Contact Us</h3>
-        <p><Icon name="entypo:phone" /> +1 123 456 7890</p>
+        <p><Icon name="entypo:phone" /> +97 152 222 2086</p>
         <p><Icon name="entypo:email" /> support@inaraequinox.com</p>
         <div class="socials">
           <Icon name="uil:linkedin" />
@@ -92,12 +96,12 @@ footer {
 
     .info {
       width: 35%;
-      img {
-        width: 100px;
-        // height: 100px;
-        // object-fit: cover;
-        // border-radius: 50%;
-        // margin-bottom: 10px;
+
+      .imges {
+        img {
+          height: 60px;
+          margin-right: 10px;
+        }
       }
 
       h3 {

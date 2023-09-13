@@ -1,7 +1,9 @@
 <template>
   <div class="contact">
     <div class="image">
-      <img src="/main.jpg" alt="" />
+      <h2>Contact Us</h2>
+      <p>Start your business journey with us right now!</p>
+      <img src="/contactus.jpg" alt="" />
     </div>
     <div class="text">
       <h3>Get in touch with us!</h3>
@@ -9,8 +11,7 @@
         <div class="set">
           <Icon name="bi:phone" />
           <p class="title">Phone</p>
-          <p>+1 123 456 7890</p>
-          <p>+1 123 456 7895</p>
+          <p>+97 152 222 2086</p>
         </div>
         <div class="set">
           <Icon name="eva:pin-outline" />
@@ -75,15 +76,41 @@ onMounted(() => {
 }
 .contact {
   width: 100%;
-
   .image {
     width: 100%;
     height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    h2 {
+      color: #d4a742;
+      font-size: 40px;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    p {
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 200;
+      margin-top: 10px;
+      text-align: center;
+    }
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      filter: brightness(0.3);
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      z-index: -1;
     }
   }
 

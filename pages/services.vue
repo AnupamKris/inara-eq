@@ -1,6 +1,6 @@
 <template>
   <div class="services">
-    <h3>Services</h3>
+    
 
     <carousel :items-to-show="1" :autoplay="2000">
       <slide v-for="slide in 5" :key="slide">
@@ -12,6 +12,8 @@
         <pagination />
       </template>
     </carousel>
+
+    
 
     <h3>Our Offerings</h3>
 
@@ -126,6 +128,24 @@
           </p>
         </div>
       </div>
+      <div class="service" :class="currentAccordion == 4 ? 'expanded' : ''">
+        <div class="title" @click="currentAccordion = 4">
+          <p>Sea Food</p>
+          <Icon name="eva:arrow-ios-downward-outline" />
+        </div>
+        <div class="content">
+          <p >
+            <p class="sub-title">Sustainable Seafood Sourcing</p>
+            <span>As responsible stewards of our oceans, we're dedicated to sustainable fishing practices. We work closely with fishermen and suppliers who share our commitment to preserving marine ecosystems for generations to come.</span>
+          </p>
+        </div>
+        <div class="content">
+          <p >
+            <p class="sub-title">Your Gateway to Ocean's Bounty</p>
+            <span>We are a trusted partner in the world of seafood export and import. With a deep-seated commitment to quality, sustainability, and global culinary excellence, we bring the finest treasures of the sea to your plate.</span>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -153,7 +173,7 @@ onMounted(() => {
 .services {
   width: 100%;
   background: #141414;
-  padding: 10px 0;
+  // padding: 10px 0;
   color: #ffffff;
 
   display: flex;
